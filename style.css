@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    background-color: #222;
+    font-family: monospace;
+    font-size: 20px;
+    color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(220, 225, 231, 0.3);
+}
+
+.preview {
+    text-align: right;
+    background-color: #333a8b;
+    border-radius: 5px;
+}
+
+.line {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.last,
+.display {
+    height: 34px;
+    padding: 5px 10px;
+}
+
+.display {
+    width: 100%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.button {
+    width: 22.3%;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.1s linear;
+}
+
+.button--operations {
+    background-color: #136313;
+}
+
+.button--clear {
+    width: 48.2%;
+    background-color: #ef5350;
+}
+
+.button--number {
+    background-color: #263238;
+}
+
+.button--equals {
+    background-color: #ff9900;
+}
+
+.button:hover {
+    opacity: 0.5;
+}
