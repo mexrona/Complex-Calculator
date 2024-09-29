@@ -67,12 +67,15 @@ body {
     transition: opacity 0.1s linear;
 }
 
+.button--brackets {
+    background-color: #8e369d;
+}
+
 .button--operations {
     background-color: #136313;
 }
 
 .button--clear {
-    width: 48.2%;
     background-color: #ef5350;
 }
 
